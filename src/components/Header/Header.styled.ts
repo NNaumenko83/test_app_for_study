@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { StyledButton } from "../Button/Button.styled";
 
 export const HeaderContainer = styled.div`
 	/* position: fixed;
@@ -21,4 +22,9 @@ export const HeaderStyled = styled.header`
 		padding-top: 0.9375rem;
 		padding-bottom: 0.9375rem;
 	}
+`;
+
+export const Button = styled(StyledButton)`
+	width: 167px;
+	height: 40px;
 `;
