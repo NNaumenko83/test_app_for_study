@@ -7,13 +7,14 @@ import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 
 import { Main } from "./components/Main/Main";
+import { TestInfoSection } from "./components/TestInfoSection/TestInfoSection";
 
 function App() {
 	return (
 		<Theme>
 			<Header />
 			<Main>
-				<h1>Main</h1>
+				<TestInfoSection />
 			</Main>
 			<Footer />
 			<ToastContainer

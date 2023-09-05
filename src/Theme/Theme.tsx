@@ -72,7 +72,7 @@ const theme = {
 		title: {
 			web: "8.75rem",
 			tablet: "7rem",
-			mobile: "3rem",
+			mobile: "1.75rem",
 		},
 
 		subTitle: {
