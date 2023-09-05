@@ -1,0 +1,20 @@
+[
+	{
+		"number": "01",
+		"name": "STRU Token sale",
+		"text": "The StarRunner Token the exclusive crypto currency fueling the adventure of the Play-to-Earn sensation.",
+		"images": ["featuresImageFirstMin", "featuresImageFirstMin2x"]
+	},
+	{
+		"number": "02",
+		"name": "Staking",
+		"text": "Join a thriving community\nof stakers, united by their passion\nfor exploration, strategy, and\ngaming.",
+		"images": ["featuresImageSecondMin", "featuresImageSecondMin2x"]
+	},
+	{
+		"number": "03",
+		"name": "NFT minting",
+		"text": "Every StarRunner NFT tells\na story – YOUR story. This NFT\nencapsulates the essence of your\njourney like never before.",
+		"images": ["featuresImageThirdMin", "featuresImageThirdMin2x"]
+	}
+]
