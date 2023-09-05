@@ -14,9 +14,8 @@ const theme = {
 		buttonTextColor: "#FFFFFF",
 		buttonBackgroundColor: "#272A2E",
 		buttonHoverBackgroundColor: "rgba(39, 42, 46, 0.9)",
-		// SocmediaColors
-		socMediaIcons: "#FFFFFF",
-		socMediaIconsHover: "#204FFE",
+		//Footer text color
+		footerTextColor: "#B3B3B3",
 		// Hero title color
 		heroTitle: "#FFFFFF",
 		// Title color
@@ -97,6 +96,8 @@ const theme = {
 			small: "0.875rem",
 			medium: "1rem",
 		},
+
+		footerText: "0.875rem",
 
 		error: "0.8125rem",
 

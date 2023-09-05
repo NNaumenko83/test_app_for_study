@@ -1,58 +1,29 @@
 import { styled } from "styled-components";
+import { ContainerStyled } from "../Container/Container.styled";
 
-export const FooterContainer = styled.div`
-	padding-bottom: 2.125rem;
+export const FooterContainer = styled(ContainerStyled)`
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 
-	display: grid;
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid ${props => props.theme.colors.footerBordersColor};
 
-	grid-template-areas:
-		"list"
-		"design"
-		"copy";
-
-	line-height: 1.28;
-
-	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+	/* @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		padding-top: 1.75rem;
 		padding-bottom: 1.75rem;
 
 		font-size: ${props => props.theme.fontSizes.body.tablet};
 		line-height: 1.31;
-
-		grid-template-areas:
-			"design list"
-			"copy list";
-	}
+	} */
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
-		position: relative;
-		font-size: ${props => props.theme.fontSizes.body.web};
-		line-height: 1.33;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-areas: "design list copy";
-
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			top: 0;
-			width: 1px;
-			height: 100%;
-			background-color: ${props => props.theme.colors.footerBordersColor};
-		}
-
-		&::before {
-			left: 25rem;
-		}
-
-		&::after {
-			left: 50rem;
-		}
+		padding-bottom: 1.625rem;
 	}
 `;
 
 export const DesignedByText = styled.p`
-	grid-area: design;
+	/* grid-area: design;
 	align-self: end;
 	justify-self: center;
 
@@ -67,11 +38,11 @@ export const DesignedByText = styled.p`
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		align-self: center;
 		justify-self: center;
-	}
+	} */
 `;
 
 export const CopyrightText = styled.p`
-	grid-area: copy;
+	/* grid-area: copy;
 	justify-self: center;
 
 	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
@@ -81,16 +52,36 @@ export const CopyrightText = styled.p`
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		align-self: center;
 		justify-self: center;
-	}
+	} */
 `;
 
 export const FooterStyled = styled.footer`
-	margin-top: 4.3125rem;
 	background-color: ${props => props.theme.colors.background};
-	@media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+
+	color: ${props => props.theme.colors.footerTextColor};
+
+	font-size: ${props => props.theme.fontSizes.footerText};
+	line-height: 1.28;
+	letter-spacing: -0.0175rem;
+
+	@media screen and (max-width: ${props => props.theme.breakpoints.maxMobile}) {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+
+		white-space: nowrap;
+		clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+	}
+
+	/* @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
 		margin-top: 4.75rem;
 	}
 	@media screen and (min-width: ${props => props.theme.breakpoints.web}) {
 		margin-top: 7.8125rem;
-	}
+	} */
 `;
